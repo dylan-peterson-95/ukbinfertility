@@ -6,6 +6,7 @@
 #SBATCH --ntasks-per-node=4
 #SBATCH --output=get_22418.log
 
+## Example code to pull all SNP data (category 22418) for all chromosomes 
 # load modules
 for CHR in {1..26}
 do
