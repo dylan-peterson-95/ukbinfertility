@@ -10,8 +10,8 @@ We will work on generating simulated data from which one could run these files.
 
 ### Contents:
 
-| File                                 | Function | Author   | Run Order |
-|--------------------------------------|----------|----------|-------|
+| File                                 | Function                    | Author           | Run Order |
+|--------------------------------------|-----------------------------|----------------|-------|
 | cohort_comparison.ipynb| -18.8444 | Dylan Peterson |  |
 | cohort_selection.r                          | 0.5170   | Dylan Peterson  | 1.000 |
 | generate_sim_phewas.ipynb             | 0.1892   | Dylan Peterson    | 0.679 |
@@ -25,4 +25,4 @@ We will work on generating simulated data from which one could run these files.
 | subset_data.r                                 | 0.1378   | Dylan Peterson | 1.000 |
 | subset_phenotypes.py                                 | 0.1378   | Dylan Peterson  | 1.000 |
 | subset_r.sbatch                                 | 0.1378   | Dylan Peterson  | 1.000 |
-| old_jobs/                                 | 0.1378   | Dylan Peterson  | 1.000 |
+| old_jobs/                                 | 0.1378   | Dylan Peterson  | Preprocessing |
