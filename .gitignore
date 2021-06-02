@@ -1,8 +1,8 @@
 ## Modified from : https://github.com/github/gitignore/blob/master/Python.gitignore
 
 # specific files to ignore:
-old_jobs/gene_download.sh
-old_jobs/rename_files.sh
+bash_scripts/gene_download.sh
+bash_scripts/rename_files.sh
 phenotype_subsettingbad.ipynb
 
 
