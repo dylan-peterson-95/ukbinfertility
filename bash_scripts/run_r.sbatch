@@ -8,14 +8,14 @@
 #SBATCH --job-name=run_r
 
 
-# load the module
+# load R and run the script
 ml R
 
-Rscript subset_data.r
+Rscript ../subset_data.r
 touch rsbatch_worked.txt
 
 
-## run R code
+## Example to run R code
 #R
 #set.seed (1)
 #m <- 4000
