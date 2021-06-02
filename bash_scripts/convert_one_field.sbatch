@@ -8,4 +8,4 @@
 
 # Example code to pull one phenotype field and convert it to a CSV
 # load modules
-./ukbconv ukb45951.enc_ukb csv -s21000 -oEthnicity
+./../ukbconv ../ukb45951.enc_ukb csv -s21000 -o../clinical_data/Ethnicity
