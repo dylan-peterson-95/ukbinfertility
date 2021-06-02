@@ -8,6 +8,6 @@
 #SBATCH --job-name=phenotype_subsetting_pandas
 
 
-# load pythong and run the script
+# load python and run the script
 ml python/3.6.1
 python3 ../phenotype_subsetting_pandas.py
