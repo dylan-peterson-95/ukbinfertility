@@ -11,7 +11,7 @@ We will work on generating simulated data from which one could run these files.
 ### Contents:
 
 | File                                    | Function                    | Author           | Run Order |
-|-----------------------------------------|-----------------------------|----------------|-------|
+|-----------------------------------------|-----------------------------|------------------|----|
 | bash_scripts/ | Slurm jobs to run code and preprocess UKBB data | Dylan Peterson | 0 |
 | decode_update_ukb.r | Decodes UKB file format to human readable file with updated column names and fields | Dylan Peterson | 1 | 
 | cohort_selection.r | Selects cohort based on relatedness and fertility status | Dylan Peterson | 2 |
