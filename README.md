@@ -26,3 +26,5 @@ We will work on generating simulated data from which one could run these files.
 | subset_phenotypes.py                                 | 0.1378   | Dylan Peterson  | 1.000 |
 | subset_r.sbatch                                 | 0.1378   | Dylan Peterson  | 1.000 |
 | old_jobs/                                 | 0.1378   | Dylan Peterson  | Preprocessing |
+| run-pheWAS.ipynb                                 | Format input files and run pheWAS   | Foster Birnbaum | 10 |
+| process-results.ipynb                                 | Process pheWAS results   | Foster Birnbaum | 11 |
