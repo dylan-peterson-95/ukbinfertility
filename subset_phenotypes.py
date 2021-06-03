@@ -1,8 +1,10 @@
 import pandas as pd
 from dask import dataframe as dd
 
+# read in our cohort
 cohort = list(pd.read_csv("clinical_data/cohort_ids.csv",header=None)[0].values)
 
+# define the columns with date information
 date_cols = ['f.53.1.0',
 'f.3060.1.0',
 'f.3060.1.1',
@@ -1620,6 +1622,7 @@ date_cols = ['f.53.1.0',
 'f.132580.0.0',
 'f.132584.0.0']
 
+# read in the data using dask, explicitly labeling dates and types
 df = dd.read_table("clinical_data/ukb45951.tab",sample = 2000000,low_memory=False,
 parse_dates=['f.53.1.0',
 'f.3060.1.0',
@@ -29173,22 +29176,32 @@ dtype={
 
 })
 
-print(df.shape)
-
+# select only those in the cohort
 df = df.loc[df["f.eid"].isin(cohort)]
 
+# update date columns to just be the year 
 for date_col in date_cols:
     print(date_col,end="\r")
-    df[date_col] = dd.to_datetime(df[date_col]) #[x.split("-")[0] for x in df[date_col]]
+    df[date_col] = [x.split("-")[0] for x in df[date_col]] #dd.to_datetime(df[date_col]) 
 
+# save as a csv
 df.to_csv("clinical_data/full_phenotypes_dask.csv")
 
-print(df.shape)
+# update the column names for the PheWAS
+cols = df.columns
+cols = ["x"+x.split("f.")[1] for x in cols]
+cols = [("_").join(x.split(".")) for x in cols]
+cols = [x if x!="xeid" else "userId" for x in cols]
+df.columns = cols
 
+
+# subset to first instances for array-type data
 cols = [x for x in df.columns if x.split(".")[-1]=="1"]
-
 df = df[cols]
+    
+# save to a csv
+df.to_csv("clinical_data/first_instance_phenotypes_dask_updated_colnames.csv",index=False)
 
-df.to_csv("clinical_data/first_instance_phenotypes_dask.csv")
+# df.to_csv("clinical_data/first_instance_phenotypes_dask.csv")
 
 print(df.shape)
