@@ -10,4 +10,4 @@
 
 # load python and run the script
 ml python/3.6.1
-python3 ../subset_phenotypes.py
+python3 ../convert_all_phenotypes.py
