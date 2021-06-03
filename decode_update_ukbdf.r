@@ -1,5 +1,11 @@
-# R program key_subset.tab created 2021-05-11 by ukb2r.cpp Mar 14 2018 14:22:05
+library("ukbtools")
 
+# converts dataset into human readable format csv
+ukb_df <- ukb_df("ukb45951")
+write.csv(ukb_df,"clinical_data/ukb_df_r.csv")
+
+# converts dataset to tsv with updated column values
+# R program key_subset.tab created 2021-05-11 by ukb2r.cpp Mar 14 2018 14:22:05
 bd <- read.table("/home/groups/meisenb/ukb/key_subset.tab", header=TRUE, sep="\t")
 lvl.0009 <- c(0,1)
 lbl.0009 <- c("Female","Male")

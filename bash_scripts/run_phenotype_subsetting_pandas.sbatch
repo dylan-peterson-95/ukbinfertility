@@ -10,4 +10,4 @@
 
 # load python and run the script
 ml python/3.6.1
-python3 ../phenotype_subsetting_pandas.py
+python3 ../convert_all_phenotypes_pandas.py
