@@ -11,7 +11,7 @@
 # load R and run the script
 ml R
 
-Rscript ../subset_data.r
+Rscript ../decode_update_ukb.r
 touch rsbatch_worked.txt
 
 
