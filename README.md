@@ -10,21 +10,18 @@ We will work on generating simulated data from which one could run these files.
 
 ### Contents:
 
-| File                                 | Function                    | Author           | Run Order |
-|--------------------------------------|-----------------------------|----------------|-------|
-| cohort_comparison.ipynb| -18.8444 | Dylan Peterson |  |
-| cohort_selection.r                          | 0.5170   | Dylan Peterson  | 1.000 |
-| generate_sim_phewas.ipynb             | 0.1892   | Dylan Peterson    | 0.679 |
-| key_subset.r                | -0.0318  | 0.330    | Dylan Peterson |
-| phenotype_subsetting.ipynb | 0.1174   | 0.640    | Dylan Peterson |
-| phenotype_subsetting_pandas.py  | -0.2177  | Dylan Peterson  | 1.000 |
-| run_phenotype_subsetting.sbatch  | -0.0408  | Dylan Peterson  | 1.000 |
-| run_phenotype_subsetting_pandas.sbatch                                 | 0.0336   | Dylan Peterson  | 1.000 |
-| snps_of_interest.ipynb                                | 0.1378   | Dylan Peterson  | 1.000 |
-| subset_cohort.R                                 | 0.1378   | Dylan Peterson  | 1.000 |
-| subset_data.r                                 | 0.1378   | Dylan Peterson | 1.000 |
+| File                                    | Function                    | Author           | Run Order |
+|-----------------------------------------|-----------------------------|----------------|-------|
+| bash_scripts/ | Slurm jobs to run code and preprocess UKBB data | Dylan Peterson | 0 |
+| decode_update_ukb.r | Decodes UKB file format to human readable file with updated column names and fields | Dylan Peterson | 1 | 
+| cohort_selection.r | Selects cohort based on relatedness and fertility status | Dylan Peterson | Aim 1 - Middle |
+| cohort_comparison.ipynb | Compares infertile and fertile men's clinical health parameters | Dylan Peterson | Aim 1 - Second to Last |
+| generate_sim_phewas.ipynb | Generates simulated pheWAS data to be used in Aim 2  | Dylan Peterson | Aim 1 - Last |
+| snps_of_interest.ipynb | Identifies SNPs to use in pheWAS instead of AZF microdeletions  | Dylan Peterson  | 1.000 |
+| phenotype_subsetting_pandas.py  | Attempt 1 to generate a full phenotype subset using Pandas | Dylan Peterson | Aim 1 - Last |
+| phenotype_subsetting.ipynb | Attempt 2 to generate a full phenotype subset using DASK | Dylan Peterson | Aim 1 - Last |
 | subset_phenotypes.py                                 | 0.1378   | Dylan Peterson  | 1.000 |
-| subset_r.sbatch                                 | 0.1378   | Dylan Peterson  | 1.000 |
-| old_jobs/                                 | 0.1378   | Dylan Peterson  | Preprocessing |
-| run-pheWAS.ipynb                                 | Format input files and run pheWAS   | Foster Birnbaum | 10 |
-| process-results.ipynb                                 | Process pheWAS results   | Foster Birnbaum | 11 |
+| run-pheWAS.ipynb                                 | Formats input files and run pheWAS   | Foster Birnbaum | 10 |
+| process-results.ipynb                                 | Processes pheWAS results   | Foster Birnbaum | 11 |
+| causality_analysis_simulated_data.ipynb | Simulates data and runs gene-by-environment analyses | Erika Malaspina | Aim 3 - First |
+
