@@ -18,8 +18,8 @@ We will work on generating simulated data from which one could run these files.
 | cohort_comparison.ipynb | Compares infertile and fertile men's clinical health parameters | Dylan Peterson | 3 |
 | generate_sim_phewas.ipynb | Generates simulated pheWAS data to be used in Aim 2  | Dylan Peterson | 4 |
 | snps_of_interest.ipynb | Identifies SNPs to use in pheWAS instead of AZF microdeletions  | Dylan Peterson  | 5 |
-| convert_all_pandas.py  | Attempt 1 to generate a full phenotype set using Pandas | Dylan Peterson | 6 |
-| phenotype_subsetting.ipynb | Attempt 2 to generate a full phenotype set using DASK | Dylan Peterson | 7 |
+| convert_all_phenotypes_pandas.py  | Attempt 1 to generate a full phenotype set using Pandas | Dylan Peterson | 6 |
+| convert_all_phenotypes.ipynb | Attempt 2 to generate a full phenotype set using DASK | Dylan Peterson | 7 |
 | run-pheWAS.ipynb | Formats input files and run pheWAS | Foster Birnbaum | 8 |
 | process-results.ipynb | Processes pheWAS results | Foster Birnbaum | 9 |
 | causality_analysis_simulated_data.ipynb | Simulates data and runs gene-by-environment analyses | Erika Malaspina | 10 |
